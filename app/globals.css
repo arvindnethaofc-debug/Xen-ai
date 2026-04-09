@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: radial-gradient(circle at top, #0b1c1f, #050a0c);
+  color: #ffffff;
+  font-family: Inter, sans-serif;
+}
+
+/* Healthcare gradient */
+.dynamic-bg {
+  background: radial-gradient(circle at 20% 30%, rgba(0, 255, 200, 0.08), transparent 40%),
+              radial-gradient(circle at 80% 20%, rgba(0, 150, 255, 0.08), transparent 40%),
+              radial-gradient(circle at 50% 80%, rgba(0, 255, 180, 0.05), transparent 50%),
+              #050a0c;
+}
+
+/* Selection */
+::selection {
+  background: #ff1f3d;
+  color: white;
+}
+
+/* Glass cards */
+.glass-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* 3D helpers */
+.perspective {
+  perspective: 1000px;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
