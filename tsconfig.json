@@ -17,8 +17,8 @@
     "baseUrl": ".",   // ✅ ADD THIS
 
     "paths": {
-      "@/*": ["./src/*"]   // ✅ FIX THIS
-    },
+  "@/*": ["./*"]
+}
 
     "plugins": [
       {
