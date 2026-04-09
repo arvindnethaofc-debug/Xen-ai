@@ -14,25 +14,16 @@
     "jsx": "react-jsx",
     "incremental": true,
 
-    "baseUrl": ".",   // ✅ ADD THIS
+    "baseUrl": ".", 
 
     "paths": {
-  "@/*": ["./*"]
-}
+      "@/*": ["./*"]
+    },
 
     "plugins": [
       {
         "name": "next"
       }
     ]
-  },
-  "include": [
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx",
-    ".next/types/**/*.ts",
-    ".next/dev/types/**/*.ts",
-    "**/*.mts"
-  ],
-  "exclude": ["node_modules"]
+  }
 }
